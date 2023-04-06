@@ -1,2 +1,38 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Imagen giratoria en HTML</title>
+    <style>
+      /* Estilos de la imagen */
+      img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+
+      /* Animación de rotación */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Aplicación de la animación */
+      .spin-image {
+        animation: spin 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Imagen giratoria en HTML</h1>
+    <img
+      class="spin-image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpz9lmFvS_Q8K2iTnbXBXmn2xFdT6zWcTa-xrDc5zpzmP3ubr9L0eKBuWWrt_KLpjoONs&usqp=CAU"
+      alt="Imagen giratoria"
+    />
+  </body>
 </html>
